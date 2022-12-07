@@ -47,15 +47,15 @@ def main():
     cur.execute('''CREATE TABLE Author(author_id TEXT PRIMARY KEY NOT NULL, first_name TEXT, last_name TEXT, 
                 author_address TEXT, author_city TEXT, author_state TEXT, author_zip TEXT)''')
     cur.execute('''INSERT INTO Author(author_id, first_name, last_name, author_address, author_city, author_state, 
-                author_zip) VALUES('Gaddis', 'Henry', 'Gaddis', '328 Hillshire Drive', 'Houston', 'Texas', '75212')''')
+                author_zip) VALUES('1', 'Henry', 'Gaddis', '328 Hillshire Drive', 'Houston', 'Texas', '75212')''')
     cur.execute('SELECT author_id, first_name, last_name, author_address, author_city, author_state, author_zip FROM Author')
     results = cur.fetchall()
     cur.execute('''INSERT INTO Author(author_id, first_name, last_name, author_address, author_city, author_state, 
-                author_zip) VALUES('Gladin', 'Jade', 'Gladin', '195 Robin Road', 'Seattle', 'Washington', '81345')''')
+                author_zip) VALUES('2', 'Jade', 'Gladin', '195 Robin Road', 'Seattle', 'Washington', '81345')''')
     cur.execute('SELECT author_id, first_name, last_name, author_address, author_city, author_state, author_zip FROM Author')
     results = cur.fetchall()
     cur.execute('''INSERT INTO Author(author_id, first_name, last_name, author_address, author_city, author_state, 
-                author_zip) VALUES('Lockust', 'Trenton', 'Lockust', '2853 Lizard Lane', 'Miami', 'Florida', '13952')''')
+                author_zip) VALUES('3', 'Trenton', 'Lockust', '2853 Lizard Lane', 'Miami', 'Florida', '13952')''')
     cur.execute('SELECT author_id, first_name, last_name, author_address, author_city, author_state, author_zip FROM Author')
     results = cur.fetchall()
     print('Author     First Name  Last Name   Address                City    State      Zip')

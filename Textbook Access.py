@@ -9,7 +9,24 @@ conn = lite.connect('textbooks.db')
 
 with conn:
     cur = conn.cursor()
-    cur.execute("SELECT * FROM author")
+    cur.execute('INSERT INTO author VALUES("4", "Corrie", "Ten Boom", "19 Bartel St", "Harlem", "Holland", "2237")')
+    cur.execute('SELECT * FROM author')
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+
+    print()
+
+    cur.execute('UPDATE author SET author_city = "Bedfordshire WHERE author_id = "3"')
+    cur.execute('SELECT * FROM author')
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+
+    print()
+
+    cur.execute('DELETE FROM author WHERE author_id = "1"')
+    cur.execute('SELECT * FROM author')
     rows = cur.fetchall()
     for row in rows:
         print(row)
