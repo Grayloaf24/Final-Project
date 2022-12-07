@@ -1,5 +1,5 @@
-#Programmer: Gracie Lougheed
-#Date: November 30, 2022
+#Programmer: Gracie Lougheed, Natalie Thumberger, Guinevere Daniels
+#Date: December 7, 2022
 #Program Title: Population Database
 
 import sqlite3
