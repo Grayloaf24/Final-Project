@@ -68,16 +68,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-    #update = input("Would you like to update the student records? ")
-    #if update == 'Yes':
-        #field = input('Enter what field you want updated: ')
-        #student = input('Enter what student you want to change the info of: ')
-        #info = input('Enter what info you want changed: ')
-        #cur.execute('UPDATE Student SET field = info WHERE student_id = student')
-        #cur.execute('SELECT * FROM Student')
-        #rows = cur.fetchall()
-        #for row in rows:
-            #print(row)
-    #else:
-        #pass
